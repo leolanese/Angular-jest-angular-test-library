@@ -1,0 +1,56 @@
+{
+  "name": "angular-test-app",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~12.2.0",
+    "@angular/common": "~12.2.0",
+    "@angular/compiler": "~12.2.0",
+    "@angular/core": "~12.2.0",
+    "@angular/forms": "~12.2.0",
+    "@angular/platform-browser": "~12.2.0",
+    "@angular/platform-browser-dynamic": "~12.2.0",
+    "@angular/router": "~12.2.0",
+    "@types/testing-library__jest-dom": "5.14.1",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~12.2.1",
+    "@angular/cli": "~12.2.1",
+    "@angular/compiler-cli": "~12.2.0",
+    "@testing-library/angular": "10.11.0",
+    "@testing-library/jest-dom": "5.14.1",
+    "@types/jest": "26.0.24",
+    "@types/node": "^12.11.1",
+    "jest": "27.0.6",
+    "jest-preset-angular": "9.0.5",
+    "karma-coverage": "~2.0.3",
+    "typescript": "~4.3.5"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupJest.ts"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/dist/"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "<rootDir>/tsconfig.spec.json",
+        "stringifyContentPathRegex": "\\.html$"
+      }
+    }
+  }
+}
