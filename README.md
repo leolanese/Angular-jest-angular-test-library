@@ -64,6 +64,7 @@ rm karma.conf.js
          "scripts": []
        }
      },
+// REMOVE ALL "test" section
 ```
 
 ### Remove files: `karma.conf.js` and `src/test.ts`
@@ -178,6 +179,10 @@ yarn test --watch
 // watch only one
 yarn test async.component.spec.ts --watch
 ```
+
+### Coverage
+
+>  the coverage as built-in functionality is generated in ./coverage directory
 
 ---
 ### :100: <i>Thanks!</i>
