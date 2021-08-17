@@ -2,7 +2,7 @@ import { NO_ERRORS_SCHEMA }          from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AboutComponent }     from './about.component';
-import { HighlightDirective } from './shared/highlight.directive';
+import { HighlightDirective } from './HighlightDirective';
 
 let fixture: ComponentFixture<AboutComponent>;
 
