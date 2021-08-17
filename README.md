@@ -18,14 +18,28 @@ npm i --save-dev @testing-library/angular @testing-library/jest-dom
 ## Install Jest and Setting up Jest
 
 ```js
+// Install the needed dependencies
 npm i jest @types/jest jest-preset-angular --save-dev
+
+// or
+yarn add jest jest-preset-angular @types/jest --dev
 ```
 
 ## Uninstall Karma
 
 ```js
 npm uninstall karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-jasmine karma-jasmine-html-reporter @types/jasmine @types/jasminewd2 jasmine-core jasmine-spec-reporter
+
+// or
+yarn remove karma karma-chrome-launcher karma-coverage-istanbul-reporter karma-jasmine karma-jasmine-html-reporter
 ```
+
+### Remove karma configuraion file
+
+```js
+rm karma.conf.js
+```
+
 
 ### Remove test from `angular.json`
 
@@ -73,13 +87,14 @@ import 'jest-preset-angular/setup-jest';
   "compilerOptions": {
     "outDir": "./out-tsc/spec",
     "types": [
-
       "jest",
-      "node"
-    ]
+      "node",
+      "@testing-library/jest-dom"
+    ],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true
   },
   "files": [
-
     "src/polyfills.ts"
   ],
   "include": [
@@ -142,9 +157,6 @@ import 'jest-preset-angular/setup-jest';
 ],
 ```
 
-## add
-
-
 ## Test Jest
 
 > run the test for: `src/app/app.component.spec.ts`
@@ -152,6 +164,9 @@ import 'jest-preset-angular/setup-jest';
 ```js
 // run ones
 yarn test
+
+// or
+npx jest
 ```
 
 ```js
