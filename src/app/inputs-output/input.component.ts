@@ -10,9 +10,11 @@ import { Component, Input, EventEmitter, Output, ViewChild, ElementRef } from '@
   styles: [`h1 { font-family: Lato; }`]
 })
 export class TitleComponent  {
-  @Input() message: string|undefined; //1
+  @Input()
+  message: string|undefined; //1
 
-  @Output() changeTitleEvent:EventEmitter<string> = new EventEmitter(); //2
+  @Output()
+  changeTitleEvent:EventEmitter<string> = new EventEmitter(); //2
 
   @ViewChild('titleField')
   titleField!: ElementRef;
@@ -24,3 +26,10 @@ export class TitleComponent  {
     }
   }
 }
+
+/*
+ @Input named message, which will display a message above the text input.
+ @Output, which will emit an event to replace the value of title in the parent AppComponent,
+ therefore changing the welcome message.
+
+*/
