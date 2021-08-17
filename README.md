@@ -105,7 +105,6 @@ import 'jest-preset-angular/setup-jest';
 }
 ```
 
-
 ## Modify file: `package.json`
 
 ```js
