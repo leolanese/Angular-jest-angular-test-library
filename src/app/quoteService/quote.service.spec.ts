@@ -1,4 +1,4 @@
-import { QuoteService } from "./quoteService";
+import { QuoteService } from "./quote.service";
 
 describe("QuoteService", () => {
   let service: QuoteService;

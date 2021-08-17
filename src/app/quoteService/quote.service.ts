@@ -1,12 +1,14 @@
 import { Injectable } from "@angular/core";
 
+export class QuoteModel {
+ constructor(public text: String, public timeCreated: String) {}
+}
 
 @Injectable({
   providedIn: "root"
 })
 export class QuoteService {
-  public quoteList: any[] = [];
-  public QuoteModel: any = [];
+  public quoteList: QuoteModel[] = [];
 
   private daysOfTheWeeks = ["Sun", "Mon", "Tue", "Wed", "Thurs", "Fri", "Sat"];
 
@@ -18,7 +20,7 @@ export class QuoteService {
     const day = date.getDay();
     const year = date.getFullYear();
     this.quoteList.push(
-      new this.QuoteModel(quote, `${dayOfTheWeek} ${day}, ${year}`)
+      new QuoteModel(quote, `${dayOfTheWeek} ${day}, ${year}`)
     );
   }
 
@@ -26,7 +28,15 @@ export class QuoteService {
     return this.quoteList;
   }
 
-  removeQuote(index) {
+  removeQuote(index: number) {
     this.quoteList.splice(index, 1);
+  }
+
+  fetchQuotesFromServer() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve([new QuoteModel("I love unit testing", "Mon 4, 2018")]);
+      }, 2000);
+    });
   }
 }
