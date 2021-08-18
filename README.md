@@ -188,6 +188,21 @@ yarn test async.component.spec.ts --watch
 
 [![Jest Running](https://i.ibb.co/NrwGbhC/Screenshot-2021-08-17-at-22-03-04.png)]()
 
+
+## Extra note:
+
+The `.compileComponents()` object is called to compile your component's resources like the template, styles, etc. `You might not necessarily need to compile your component if you are using Webpack`.
+
+```js
+beforeEach(async(() => {
+   TestBed.configureTestingModule({
+      declarations: [
+         AppComponent
+      ],
+   }).compileComponents();
+}));
+```
+
 ---
 ### :100: <i>Thanks!</i>
 #### Now, don't be an stranger. Let's stay in touch!
