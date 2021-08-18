@@ -181,7 +181,7 @@ yarn test async.component.spec.ts --watch
 
 ### Coverage
 
->  the coverage as built-in functionality is generated in ./coverage directory
+>  The coverage as built-in functionality is generated in: `./coverage` directory
 
 
 ## Demo
