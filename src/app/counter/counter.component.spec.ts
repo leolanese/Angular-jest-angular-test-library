@@ -1,7 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/angular'
 import { CounterComponent } from './counter.component'
 
-describe('Counter', () => {
+describe('Validate Counter', () => {
   test('should render counter', async () => {
     await render(CounterComponent, {
       componentProperties: {counter: 5},

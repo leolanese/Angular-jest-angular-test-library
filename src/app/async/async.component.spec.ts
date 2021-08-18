@@ -4,9 +4,9 @@ import '@testing-library/jest-dom/extend-expect'
 
 import { AsyncComponent } from './async.component';
 
-it('Verify should test some asynchronous code', fakeAsync(() => {}));
+it('Should should test some asynchronous code', fakeAsync(() => {}));
 
-it('Verify if can use fakeTimer utilities', async () => {
+it('Should if can use fakeTimer utilities', async () => {
   jest.useFakeTimers();
   await render(AsyncComponent);
 

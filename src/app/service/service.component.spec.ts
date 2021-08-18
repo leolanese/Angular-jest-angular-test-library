@@ -4,7 +4,7 @@ import { createMock } from '@testing-library/angular/jest-utils';
 
 import { Customer, CustomersComponent, CustomersService } from './service.component';
 
-test('renders the provided customers with manual mock', async () => {
+test('Validate renders the provided customers with manual mock', async () => {
   const customers: Customer[] = [
     {
       id: '1',

@@ -6,7 +6,7 @@ import { HighlightDirective } from './HighlightDirective';
 
 let fixture: ComponentFixture<AboutComponent>;
 
-describe('AboutComponent (highlightDirective)', () => {
+describe('Validate AboutComponent (highlightDirective)', () => {
   beforeEach(() => {
     fixture = TestBed.configureTestingModule({
       declarations: [ AboutComponent, HighlightDirective],
@@ -22,10 +22,3 @@ describe('AboutComponent (highlightDirective)', () => {
     expect(bgColor).toBe('skyblue');
   });
 });
-
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

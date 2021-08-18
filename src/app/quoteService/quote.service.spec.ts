@@ -1,6 +1,6 @@
 import { QuoteService } from "./quote.service";
 
-describe("QuoteService", () => {
+describe("Validate QuoteService", () => {
   let service: QuoteService;
 
   beforeEach(() => {

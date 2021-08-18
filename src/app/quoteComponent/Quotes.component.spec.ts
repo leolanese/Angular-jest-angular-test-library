@@ -5,7 +5,7 @@ import { QuotesComponent } from "./Quotes.component";
 import { QuoteService, QuoteModel } from "../quoteService/quote.service";
 import { FormsModule } from "@angular/forms";
 
-describe("QuotesComponent", () => {
+describe("Validate QuotesComponent", () => {
   let component: QuotesComponent;
   let fixture: ComponentFixture<QuotesComponent>;
 

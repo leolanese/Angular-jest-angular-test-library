@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { TitleComponent } from './input.component';
 
-describe('TitleComponent ', () => { // 1
+describe('Validate TitleComponent ', () => { // 1
   let component: TitleComponent;
   let fixture: ComponentFixture<TitleComponent>;
 
