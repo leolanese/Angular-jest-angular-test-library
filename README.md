@@ -199,7 +199,7 @@ beforeEach(async(() => {
       declarations: [
          AppComponent
       ],
-   }).compileComponents();
+   }).compileComponents(); <-- Don't need it when using WebPack
 }));
 ```
 
